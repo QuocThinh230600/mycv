@@ -33,9 +33,9 @@
 }
 
 .sidebar__left .header img{
-    border-radius: 75px;
-    width: 120px;
-    height: 180px;
+    border-radius: 8px;
+    width: 180px;
+    height: 200px;
 }
 
 .sidebar__left .header h1{
@@ -111,6 +111,10 @@
     text-transform: capitalize;
 }
 
+.sidebar__right hr{
+    margin-top: 10px;
+}
+
 .sidebar__right .page {
     height: 100%;
     padding: 8px 16px;
@@ -122,45 +126,167 @@
     margin-top: 10px;
 }
 
-.sidebar__right .page .item{
+.sidebar__right .page .introduce{
     display: flex;
     flex-direction: column;
 }
 
-.sidebar__right .page .item .title{
-    margin-top: 10px;
-    font-size: 18px;
-    font-weight: 700;
-}
-
-.sidebar__right .page .item .work__exp{
-    padding: 12px 24px;
-}
-
-.sidebar__right .page .item .work__exp li table tr th{
-    text-align: left;
-    text-transform: uppercase;
-    font-size: 14px;
-}
-
-.sidebar__right .page .item .work__exp li table tr td:nth-child(1){
-    width: 200px;
-    font-size: 14px;
-    text-align: left;
-    font-weight: 700;
-}
-
-.sidebar__right .page .item .work__exp li table tr td:nth-child(2){
-    font-size: 14px;
-}
-
-.sidebar__right .page .item ul{
+.sidebar__right .page .introduce ul{
     list-style: none;
     padding: 0;
 }
 
-.sidebar__right .page .item ul li span{
+.sidebar__right .page .introduce ul li span{
     font-size: 14px;
+}
+
+.sidebar__right .page .list-item{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.sidebar__right .page .list-item .item:first-child{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar__right .page .list-item .item:last-child{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar__right .page .list-item .item .title{
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.sidebar__right .page .list-item .item .name{
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.sidebar__right .page .list-item .item .year{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.sidebar__right .page .list-item .item .job{
+    font-size: 16px;
+    text-transform: capitalize;
+    /* font-weight: 500; */
+}
+
+.sidebar__right .page .list-item .item .child-item{
+    margin: 10px 0;
+}
+
+.sidebar__right .page .list-item .item .child-item ul{
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar__right .page .list-item .item .child-item ul li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sidebar__right .page .list-item .item .child-item ul li#text{
+    width: 500px;
+}
+
+.sidebar__right .page .list-item .item .child-item ul li i{
+    width: 20px;
+}
+
+.sidebar__right .page .list-item .item .child-item .title{
+    font-size: 18px;
+}
+
+.sidebar__right .page .exp{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.sidebar__right .page .exp .title{
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.sidebar__right .page .exp ul{
+    list-style: none;
+}
+
+.sidebar__right .page .exp ul li{
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sidebar__right .page .exp ul li i{
+    width: 20px;
+}
+
+.sidebar__right .page .work-experience .title{
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.sidebar__right .page .work-experience{
+    margin: 20px 0;
+}
+
+.sidebar__right .page .work-experience .item{
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar__right .page .work-experience .item .year{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.sidebar__right .page .work-experience .item .year .year-item, .sidebar__right .page .work-experience .item .year .name-company, .sidebar__right .page .work-experience .item .job .job-name{
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.sidebar__right .page .work-experience .item .name-company a{
+    text-decoration: none;
+    color: #000;
+}
+
+.sidebar__right .page .work-experience .item .name-company a:hover{
+    color: red;
+}
+
+.sidebar__right .page .work-experience .item .job{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar__right .page .work-experience .item .job ul{
+    list-style: none;
+    padding-left: 60px;
+}
+
+.sidebar__right .page .work-experience .item .job ul li{
+    display: flex;
+    align-items: center;
 }
 
 .sidebar__right .page::-webkit-scrollbar{

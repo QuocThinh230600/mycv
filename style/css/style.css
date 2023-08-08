@@ -143,7 +143,8 @@
 .sidebar__right .page .list-item{
     display: flex;
     flex-direction: row;
-    margin-top: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid #fff;
 }
 
 .sidebar__right .page .list-item .item:first-child{
@@ -213,7 +214,8 @@
 .sidebar__right .page .exp{
     display: flex;
     flex-direction: column;
-    margin: 20px 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #fff;
 }
 
 .sidebar__right .page .exp .title{
@@ -250,18 +252,24 @@
 .sidebar__right .page .work-experience .item{
     display: flex;
     flex-direction: row;
+    padding: 10px 0;
+    border-bottom: 1px solid #fff;
+}
+
+.sidebar__right .page .work-experience .item:last-child{
+    border: none;
 }
 
 .sidebar__right .page .work-experience .item .year{
     display: flex;
     flex-direction: column;
-    width: 20%;
+    width: 30%;
 }
 
 .sidebar__right .page .work-experience .item .year .year-item, .sidebar__right .page .work-experience .item .year .name-company, .sidebar__right .page .work-experience .item .job .job-name{
     font-size: 16px;
-    font-weight: 600;
-    text-align: center;
+    font-weight: 700;
+    /* text-align: center; */
 }
 
 .sidebar__right .page .work-experience .item .name-company a{
@@ -274,14 +282,18 @@
 }
 
 .sidebar__right .page .work-experience .item .job{
-    width: 80%;
+    width: 70%;
     display: flex;
     flex-direction: column;
 }
 
+.sidebar__right .page .work-experience .item .job .job-name{
+    font-weight: 700;
+}
+
 .sidebar__right .page .work-experience .item .job ul{
-    list-style: none;
-    padding-left: 60px;
+    /* list-style: none; */
+    padding-left: 0px;
 }
 
 .sidebar__right .page .work-experience .item .job ul li{
